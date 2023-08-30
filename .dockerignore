@@ -1,0 +1,4 @@
+# flyctl launch added from .gitignore
+**\frontend\node_modules
+**\backend\venv
+fly.toml
