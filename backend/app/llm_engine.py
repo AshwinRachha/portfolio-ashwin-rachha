@@ -22,8 +22,8 @@ class FaissIndex():
     def __init__(self):
         self.COLLECTION_NAME = "vector_store" 
         logging.info(f"Loading Embedding model: all-mpnet-base-v2")
-        self.embeddings = HuggingFaceEmbeddings(model_name = "all-mpnet-base-v2")
-        #self = OpenAIEmbeddings(model = "text-embedding-ada-002")
+        #self.embeddings = HuggingFaceEmbeddings(model_name = "all-mpnet-base-v2")
+        self.embeddings = OpenAIEmbeddings(model = "text-embedding-ada-002")
         self.vector_store = FAISS.load_local("vector_store",self.embeddings)
         logging.info(f"Loaded Vector Store: {self.COLLECTION_NAME}")
         self.template = """You are an AI assistant tailored for Ashwin Rachha. Your capabilities include:
