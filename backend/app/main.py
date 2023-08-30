@@ -5,11 +5,9 @@ from fastapi import Request
 import typing as t
 import uvicorn
 import os
-from dotenv import load_dotenv
 from llm_engine import FaissIndex
 import openai
 
-load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
