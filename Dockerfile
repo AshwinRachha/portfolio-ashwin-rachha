@@ -1,4 +1,4 @@
-# Use an official Node.js runtime as base image for frontend
+# Frontend Stage
 FROM node:14 as frontend
 
 WORKDIR /frontend
@@ -9,17 +9,17 @@ RUN npm install
 COPY frontend /frontend
 RUN npm run build
 
-# Use an official Python runtime for backend
+# Backend Stage
 FROM python:3.8-slim
 
 WORKDIR /app
 
-# Install node to serve the React app
-RUN apt-get update && apt-get install -y nodejs npm && apt-get clean
-
 # Install FastAPI dependencies
 COPY backend/app/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Install the serve tool globally
+RUN apt-get update && apt-get install -y npm && npm install -g serve && apt-get clean
 
 # Copy the React build from the frontend stage
 COPY --from=frontend /frontend/build /app/frontend/build
@@ -32,4 +32,5 @@ EXPOSE 8000
 EXPOSE 3000
 
 # Use the CMD directive to start both services
-CMD uvicorn main:app --host 0.0.0.0 --port 8000 & cd frontend/build && npx serve -s -l 3000
+#CMD uvicorn main:app --host 0.0.0.0 --port 8000 & serve -s /app/frontend/build -l 0.0.0.0:3000
+CMD serve -s /app/frontend/build -l 0.0.0.0:3000 && sleep 30 && uvicorn main:app --host 0.0.0.0 --port 8000
