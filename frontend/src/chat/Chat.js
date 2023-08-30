@@ -11,7 +11,7 @@ function Chat() {
         setMessages([...messages, { type: 'user', content: currentMessage }]);
 
         try {
-            const response = await axios.post('http://localhost:8000/generate-text/', { query: currentMessage });
+            const response = await axios.post('http://0.0.0.0:8000/generate-text/', { query: currentMessage });
             setMessages(prevMessages => [...prevMessages, { type: 'bot', content: response.data.response }]);
         } catch (error) {
             console.error("Error while querying:", error);
