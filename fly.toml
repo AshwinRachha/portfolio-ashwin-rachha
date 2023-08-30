@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for ashwinrachha on 2023-08-29T22:23:13-04:00
+# fly.toml app configuration file generated for ashwin-rachha on 2023-08-30T01:39:56-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "ashwinrachha"
+app = "ashwin-rachha"
 primary_region = "iad"
 
 [build]

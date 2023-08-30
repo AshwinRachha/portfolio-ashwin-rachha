@@ -7,10 +7,13 @@ from datetime import datetime
 from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings, SentenceTransformerEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
-
+from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
+
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='=========== %(asctime)s :: %(levelname)s :: %(message)s')
 MetadataFilter = Dict[str, Union[str, int, bool]]
@@ -19,8 +22,9 @@ class FaissIndex():
     def __init__(self):
         self.COLLECTION_NAME = "vector_store" 
         logging.info(f"Loading Embedding model: all-mpnet-base-v2")
-        self.embedding = HuggingFaceEmbeddings(model_name = "all-mpnet-base-v2")
-        self.vector_store = FAISS.load_local("vector_store",self.embedding)
+        self.embeddings = HuggingFaceEmbeddings(model_name = "all-mpnet-base-v2")
+        #self = OpenAIEmbeddings(model = "text-embedding-ada-002")
+        self.vector_store = FAISS.load_local("vector_store",self.embeddings)
         logging.info(f"Loaded Vector Store: {self.COLLECTION_NAME}")
         self.template = """You are an AI assistant tailored for Ashwin Rachha. Your capabilities include:
                         - Providing insights and details about Ashwin Rachha's past experiences and achievements.
