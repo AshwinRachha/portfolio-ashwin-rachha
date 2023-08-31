@@ -8,7 +8,7 @@ const Popup = () => {
 
     const sendQuery = async () => {
         try {
-            const result = await axios.post('https://0.0.0.0:8000/query', { query: message });
+            const result = await axios.post('https://ashwinrachha.onrender.com/query', { query: message });
             setResponse(result.data.response);
         } catch (error) {
             setResponse('Error communicating with the server.');
