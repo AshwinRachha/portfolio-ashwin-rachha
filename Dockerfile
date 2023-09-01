@@ -3,33 +3,27 @@ FROM node:14 as frontend
 
 WORKDIR /frontend
 
+# Copy frontend package.json and package-lock.json
 COPY frontend/package*.json ./
 RUN npm install
 
+# Copy frontend source code and build it
 COPY frontend /frontend
 RUN npm run build
 
-# Use an official Python runtime for backend
-FROM python:3.8-slim
+# Set up the runtime environment
+FROM node:14
 
 WORKDIR /app
 
-# Install node and serve to serve the React app
-RUN apt-get update && apt-get install -y nodejs npm && apt-get clean && npm install -g serve
-
-# Install FastAPI dependencies
-COPY backend/app/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Install 'serve' to serve the React app
+RUN npm install -g serve
 
 # Copy the React build from the frontend stage
-COPY --from=frontend /frontend/build /app/frontend/build
+COPY --from=frontend /frontend/build /app/build
 
-# Copy the backend code
-COPY backend/app /app
-
-# Expose ports (for documentation purposes)
-EXPOSE 8000
+# Expose port 3000
 EXPOSE 3000
 
-# Use the CMD directive to start both services
-CMD serve -s /app/frontend/build -l tcp://0.0.0.0:3000 && sleep 10 && uvicorn main:app --host 0.0.0.0 --port 8000
+# Use the CMD directive to start the service
+CMD ["serve", "-s", "/app/build", "-l", "tcp://0.0.0.0:3000"]
