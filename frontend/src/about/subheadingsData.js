@@ -4,18 +4,89 @@ const subheadingsData = {
         title: "About Me",
         content: (
           <>
+          <p>
+        I am a Master's student majoring in Computer Science at Virginia Tech. I have a passion for building, scaling, maintaining, and perusing intelligent systems that have sprung from the fields of Machine Learning, Natural Language Processing, and principles of Software Engineering with their presence in real-world settings.
+        <br></br>
+        <br></br>
+        I have an extensive work experience at three companies - Unar Labs - Portland Maine, Outreach Corporation Seattle Washington, and Mindbowser Inc Pune, India.
+        <br></br>
+        <br></br>
+        I played a pivotal role most recently at UnarLabs LLC as a Machine Learning Engineer developing a new backend system for
+         which enhanced multisensory information access for visually impaired individuals. My responsibilities included architecting and optimizing data pipelines for tasks like data preprocessing, model training, and inference. I leveraged various frameworks such as OpenCV, PyTorch, Transformers, and FastAPI, along with technologies like Distributed Servers, Docker, GCP, and HuggingFace. This comprehensive approach allowed me to engage in full-stack data science and contribute significantly to the project's success.
+        <br></br>
+        <br></br>
+
+        During my internship at Outreach Corporation, I developed a template engine project to streamline the deployment of NLP models for Data Scientists and Machine Learning Engineers. This involved building a complex Inference Service Solution for models like BERT, ROBERTA, and DistilBERT in ONNX format, along with a Golang-based Microservice for real-time predictions. I also conducted testing using CircleCI, dockerized both solutions, and managed deployment with Kubernetes. This experience expanded my technical skill set and introduced me to a collaborative team of industry professionals.
+        </p>
+          </>
+        ),
+      },
+    ],
+    3: [
+      {
+        title: "Master of Science, Computer Science - Virginia Tech 2021-2023",
+        content: (
+          <>
             <p>
-            I am a Master's student majoring in Computer Science at Virginia Tech. I have a passion for building, scaling, maintaining and perusing about intelligent systems that have sprung from the fields of Machine Learning, Natural Language Processing and principles of Software Engineering with their presence in real-world settings. 
-
-My most recent experience was a wonderful internship experience at Outreach Corporation where I was responsible for building a template engine project that could ease the process of Deploying NLP based models online for Data Scientists and Machine Learning Engineers. During this experience I learned how to build and configure a complex Inference Service Solution (NVIDIA Triton Inference Server) for deploying Model Binaries for BERT, ROBERTA and DistilBERT in their ONNX flavor. I also wrote a Golang Based Microservice which would be used to communicate with the configured server and would server prediction results in real-time. Finally to test the working of the project I wrote tests in CircleCI configs and dockerized the inference solution as well as the microservice into a container and deployed it online via Kubernetes manifests. Being in a close knit environment with great leaders and programmers was the best highlight of my internship. This experience evolved my thinking about designing and deploying systems at scale . It also goes without saying that I had an opportunity to add a lot of technologies to my belt ranging from Golang, CircleCI, Kubernetes, Docker, Bash scripting, Python scripting and Software Engineering tools such as Git, Github, JIRA, Confluence etc. 
-
-I love writing about and elucidating Machine Learning and Deep learning concepts and code, it sort of acts as a mental note to myself and as a result I blog regularly @ https://ashwinrachha.github.io/blogpost/ and https://medium.com/@ashwin_rachha/ . I am a Kaggle Notebooks experts and enjoy writing code related to Data Science, NLP and CV competitions. Please checkout my kaggle profile @ https://www.kaggle.com/ashwinrachha1. Alternatively I love solving Data Structures and Algorithms related problems and frequenty blog about them. Checkout my Leetcode profile @ https://leetcode.com/ashwin_rachha/
-
-I am open for Full time opportunities in Machine Learning and or Software Development starting in the summer of 2023. Please feel free to reach out to me regarding any opportunity or for collaborations or just for the sake of reaching out :D.
+            ⭐️Master's Thesis in building and evaluating an Adaptive Learning Platform for Computer Science
+            students utilizing Large Language Models for Explainability. 
+            <br></br>
+            📜 Academic Research Paper Titled - Explainable AI in Education : Current Trends, Challenges and Opportunities | (IEEE SouthEastCon )
+            <br></br>
+            🏴󠁴󠁴󠁰󠁴󠁦󠁿 Courses
+            <br></br>
+            ❥ CS5814 - Deep Learnning
+            <br></br>
+            ❥ CS5604 - Information Storage and Retrieval
+            <br></br>
+            ❥ CS984 - Natural Language Processing
+            <br></br>
+            ❥ CS5014 - Research Methods in Computer Science
+            <br></br>
+            ❥ CS5704 - Software Engineering
+            <br></br>
+            ❥ CS6000 - Human AI Interaction
+            <br></br>
             </p>
           </>
         ),
       },
+      {
+        title: "Bachelor of Science, Computer Science - Pune Institute of Computer Technology 2016-2020",
+        content: (
+          <>
+          <p>
+          📜 Two Academic Research Papers :
+          1. Detecting Insincere Questions From Text.
+          2. Covid-19 Detection from Chest X-Rays using Deep Learning.
+            <br></br>
+            🏴󠁴󠁴󠁰󠁴󠁦󠁿 Courses
+            <br></br>
+            ❥ Machine Learning
+            <br></br>
+            ❥ Computer Organization and Architecture
+            <br></br>
+            ❥ Data Structures and Algorithms
+            <br></br>
+            ❥ Object Oriented Programming
+            <br></br>
+            ❥ Data Mining and Warehousing
+            <br></br>
+            ❥ Theory of Computation
+            <br></br>
+            ❥ Programming in Java
+            <br></br>
+            ❥ Operating Systems and Systems Programming
+            <br></br>
+            ❥ Microprocessors
+            <br></br>
+            ❥ Distributed Systems
+            <br></br>
+          </p>
+        </>
+        ),
+      },
+
     ],
     2: [
       {
@@ -23,22 +94,21 @@ I am open for Full time opportunities in Machine Learning and or Software Develo
         content: (
           <>
             <p>
-            ● Responsible for developing a template engine project to help Data Scientists and Machine Learning Engineers at Outreach to use templates to deploy any NLP model online inorder for them to avoid writing redundant boiler plate code.
+            <br></br>
+            <br></br>
+            🚀 Delivered an Online Inference Solution, templatized for command-line usage, saving Data Scientists' time (3-4 days to 30 minutes) for serving NLP-based models viz. BERT, ROBERTA, and DISTILBERT for topic detection, question detection, action analysis, and sentiment analysis. End product resulted in a deployed application online via Kubernetes manifests on Outreach Staging Environment.
+            <br></br>
+            <br></br>
+            🔧 Wrote PySpark pipelines for ingesting data, preprocessing, tokenization, prediction, and postprocessing of text data.
+            <br></br>
+            <br></br>
+            🐍 Wrote Python scripts to instantiate NLP model binaries in the ONNX format on the NVIDIA Triton Inference Server and alternatively a Python and Go-based microservice packaged in a Dockerfile customizable automatically through CLI by Data Scientists.
+            <br></br>
+            <br></br>
 
-● Delivered an Online Inference Solution with a gRPC based Microservice in Golang serving NLP based models viz. BERT, ROBERTA and DISTILBERT for topic detection, question detection, action analysis and sentiment analysis.
-
-● Wrote Python pipelines for ingesting data, preprocessing, tokenization, prediction and postprocessing of text data.
-
-● Wrote Bash scripts to instantiate NLP model binaries in the ONNX format on the NVIDIA Triton Inference Server and packaged the inference solution as a docker image.
-
-● Wrote a Go based microservice to be used to communicate with the inference server via gRPC requests and responses. Dockerized the microservice solution which would be later used to communicate with the inference service.
-
-● Wrote tests for the application service as well as the inference service via CircleCI configuration files.
-
-● Deployed the application online via Kubernetes manifests on Outreach Staging Environment.
-
-● Reduced Data Scientist efficiency time from 3-4 days to 2 Hours.● Responsible for developing a template engine project to help Data Scientists and Machine Learning Engineers at Outreach to use templates to deploy any NLP model online inorder for them to avoid writing redundant boiler plate code. ● Delivered an Online Inference Solution with a gRPC based Microservice in Golang serving NLP based models viz. BERT, ROBERTA and DISTILBERT for topic detection, question detection, action analysis and sentiment analysis. ● Wrote Python pipelines for ingesting data, preprocessing, tokenization, prediction and postprocessing of text data. ● Wrote Bash scripts to instantiate NLP model binaries in the ONNX format on the NVIDIA Triton Inference Server and packaged the inference solution as a docker image. ● Wrote a Go based microservice to be used to communicate with the inference server via gRPC requests and responses. Dockerized the microservice solution which would be later used to communicate with the inference service. ● Wrote tests for the application service as well as the inference service via CircleCI configuration files. ● Deployed the application online via Kubernetes manifests on Outreach Staging Environment. ● Reduced Data Scientist efficiency time from 3-4 days to 2 Hours.
-Skills: Data Engineering · Google Cloud Platform (GCP) · Algorithms · Git · Backend Engineering · Microservices · Online Inference · Docker · Kubernetes · CircleCI · Continuous Integration and Continuous Delivery (CI/CD) · Software Development · MLOps · Go (Programming Language) · Python (Programming Language) · Machine Learning · Deep Learning · Natural Language Processing (NLP)
+            🧪 Wrote tests for the application service as well as the inference service via CircleCI configuration files.
+            <br></br>
+            <br></br>
             </p>
           </>
         ),
@@ -48,60 +118,48 @@ Skills: Data Engineering · Google Cloud Platform (GCP) · Algorithms · Git · 
         content: (
           <>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br></br>
+            <br></br>
+            🌟 Developed a new backend system at UNAR Labs to empower multisensory information access for visually impaired individuals.
+            <br></br>
+            <br></br>
+            🧰 Designed and optimized end-to-end pipelines for data preprocessing, model training, and inference using cutting-edge technologies like OpenCV, PyTorch, Transformers, and FastAPI.
+            <br></br>
+            <br></br>
+            🚀 Leveraged distributed servers and containerization with Docker and Google Cloud Platform (GCP) to ensure seamless scalability and performance.
+            <br></br>
+            <br></br>
+            💼 Collaborated closely with a full-stack data science team, demonstrating expertise in architecting solutions and integrating HuggingFace models for NLP tasks.
+            <br></br>
+            <br></br>
+            📈 Contributed to enhancing accessibility and inclusivity through innovative technology solutions for UNAR Labs.
+            <br></br>
+            <br></br>
             </p>
           </>
         ),
       },
-    ],
-    3: [
       {
         title: "2021-2022 Graduate Teaching Assistant @ Virginia Tech, Virginia, USA.",
         content: (
           <>
             <p>
-            Assisted students with assignments related to Java and Kotlin, providing guidance and support to ensure successful completion.
-        Explained complex software engineering concepts, including design patterns, through clear and concise explanations, fostering student understanding and application.
-        Conducted grading of assignments, ensuring fairness and accuracy in evaluating student work based on established rubrics and guidelines.
-        Actively participated in brainstorming sessions, collaborating with course instructors to develop engaging discussions and assignments that enhanced student learning experience.
-        Offered one-on-one consultations to address students' questions and concerns, providing personalized assistance to aid in their academic success.
-        Maintained effective communication with students, promptly responding to inquiries and providing timely feedback to facilitate their learning process.
-        ✨ Achievements:
-
-        Received positive feedback from students for exceptional teaching skills, resulting in improved course evaluations and overall student satisfaction.
-        Collaborated with faculty members to create and implement innovative teaching strategies, incorporating real-world examples and hands-on activities to enhance student engagement and comprehension.
-        Developed additional resources, such as coding tutorials and study guides, to supplement course materials and further support student learning.
-
-        💡 Technical Skills:
-
-        Programming Languages: Java, Kotlin.
-        Tools: Github, Gitlab.Graduate Teaching Assistant for the Course CS5704 - Software Engineering. Responsibilities: Assisted students with assignments related to Java and Kotlin, providing guidance and support to ensure successful completion. Explained complex software engineering concepts, including design patterns, through clear and concise explanations, fostering student understanding and application. Conducted grading of assignments, ensuring fairness and accuracy in evaluating student work based on established rubrics and guidelines. Actively participated in brainstorming sessions, collaborating with course instructors to develop engaging discussions and assignments that enhanced student learning experience. Offered one-on-one consultations to address students' questions and concerns, providing personalized assistance to aid in their academic success. Maintained effective communication with students, promptly responding to inquiries and providing timely feedback to facilitate their learning process. ✨ Achievements: Received positive feedback from students for exceptional teaching skills, resulting in improved course evaluations and overall student satisfaction. Collaborated with faculty members to create and implement innovative teaching strategies, incorporating real-world examples and hands-on activities to enhance student engagement and comprehension. Developed additional resources, such as coding tutorials and study guides, to supplement course materials and further support student learning. 💡 Technical Skills: Programming Languages: Java, Kotlin. Tools: Github, Gitlab.
-        Skills: Kotlin · Algorithms · Continuous Integration and Continuous Delivery (CI/CD) · Software Development · JavaSkills: Kotlin · Algorithms · Continuous Integration and Continuous Delivery (CI/CD) · Software Development · Java
-        Graduate Teaching Assistant - Introduction to Data Analytics and VisualizationGraduate Teaching Assistant - Introduction to Data Analytics and Visualization
-        Aug 2022 - Jan 2023 · 6 mosAug 2022 - Jan 2023 · 6 mos
-        Responsibilities:
-
-        Assisted students in understanding and applying data science and machine learning concepts, including regression, classification, clustering, statistics, and natural language processing.
-        Designed assignments that challenged students to apply their knowledge and skills in real-world scenarios, fostering critical thinking and problem-solving abilities.
-        Graded assignments and provided constructive feedback to help students improve their understanding and implementation of data analytics and visualization techniques.
-        Conducted weekly office hours, offering personalized guidance and clarification on complex topics related to machine learning and data science.
-        Collaborated with course instructors to brainstorm and develop engaging discussions and activities that enhanced students' comprehension and practical skills in data analytics and visualization.
-        ✨ Achievements:
-
-        Recognized for exceptional teaching skills and ability to simplify complex concepts, resulting in positive feedback from students and improved course evaluations.
-        Contributed to the development of a comprehensive curriculum that integrated cutting-edge techniques and tools in data analytics and visualization, preparing students for real-world applications.
-        Led workshops on machine learning algorithms and data analysis techniques, providing students with hands-on experience in utilizing popular libraries and software tools.
-
-
-        💡 Technical Skills:
-
-        Programming Languages: Python, R
-        Data Analytics Tools: Pandas, NumPy, Scikit-learn, TensorFlow, Keras
-        Data Visualization: Tableau, Matplotlib, Seaborn
-        Machine Learning Concepts: Regression, Classification, Clustering, Dimensionality Reduction, Natural Language Processing, Deep Learning
-        Statistical Analysis: Hypothesis Testing, Descriptive Statistics, Probability Distributions Teaching Assistant for the course CS3654 - Introduction to Data Analytics and Visualization.Responsibilities: Assisted students in understanding and applying data science and machine learning concepts, including regression, classification, clustering, statistics, and natural language processing. Designed assignments that challenged students to apply their knowledge and skills in real-world scenarios, fostering critical thinking and problem-solving abilities. Graded assignments and provided constructive feedback to help students improve their understanding and implementation of data analytics and visualization techniques. Conducted weekly office hours, offering personalized guidance and clarification on complex topics related to machine learning and data science. Collaborated with course instructors to brainstorm and develop engaging discussions and activities that enhanced students' comprehension and practical skills in data analytics and visualization. ✨ Achievements: Recognized for exceptional teaching skills and ability to simplify complex concepts, resulting in positive feedback from students and improved course evaluations. Contributed to the development of a comprehensive curriculum that integrated cutting-edge techniques and tools in data analytics and visualization, preparing students for real-world applications. Led workshops on machine learning algorithms and data analysis techniques, providing students with hands-on experience in utilizing popular libraries and software tools. 💡 Technical Skills: Programming Languages: Python, R Data Analytics Tools: Pandas, NumPy, Scikit-learn, TensorFlow, Keras Data Visualization: Tableau, Matplotlib, Seaborn Machine Learning Concepts: Regression, Classification, Clustering, Dimensionality Reduction, Natural Language Processing, Deep Learning Statistical Analysis: Hypothesis Testing, Descriptive Statistics, Probability Distributions Teaching Assistant for the course CS3654 - Introduction to Data Analytics and Visualization.
-            </p>
+          <br></br>
+          📚 Assisted students with assignments related to Java and Kotlin, providing guidance and support for successful completion.
+          <br></br>
+          <br></br>
+          🧩 Explained complex software engineering concepts, including design patterns, through clear and concise explanations to enhance student understanding.
+          <br></br>
+          <br></br>
+          📝 Conducted fair and accurate grading of assignments based on established rubrics and guidelines.
+          <br></br>
+          <br></br>
+          🤝 Actively collaborated in brainstorming sessions to develop engaging discussions and assignments, enriching the student learning experience.
+          <br></br>
+          <br></br>
+          🎯 Offered personalized one-on-one consultations to address students' questions and concerns, facilitating their academic success.
+          <br></br>
+          </p>
           </>
         ),
       },
@@ -110,39 +168,24 @@ Skills: Data Engineering · Google Cloud Platform (GCP) · Algorithms · Git · 
         content: (
           <>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br></br>
+            <br></br>
+            👁️‍🗨️ Implemented a Facial Expression recognition application to detect and classify expressions during an ongoing meeting for CRM.
+            <br></br>
+            <br></br>
+            🧠 Trained a Convolutional Neural Network VGG-19 transfer learning model as the final classifier in PyTorch, achieving an accuracy of 73% on the validation set. Integrated the application with a MongoDB database, storing metadata and images in GridFS format.
+            <br></br>
+            <br></br>
+            🚀 Packaged the code in a Python-based executable that could be instantiated with a button click on the desktop as an application.
+            <br></br>
+            <br></br>
+            🌐 The project is in beta testing at Volkswagen and Bajaj India.
+            <br></br>
+            <br></br>
             </p>
           </>
         ),
-      },
-      {
-        title: "2017 IT Consultant",
-        content: (
-          <>
-            <p>
-            ● Responsible for implementing a Facial Expression Recognition (FER) application.
-
-● Performed Exploratory Data Analysis on the underlying data - (FER 2013 dataset) and tested classical Machine Learning models viz. Logistic Regression, Support Vector Machine as a baseline classifier.
-
-● Implemented a Proof of Concept Convolutional Neural Network VGG-19 transfer learning model as the final classifier in Pytorch achieving an accuracy of 73% on the validation set.
-
-● Integrated the application with a MongoDB database to store meeting metadata (timestamps, faces detected, expressions classified etc) and respective images in a GridFS format.
-
-● Wrote a GUI script to translate the POC into a desktop application using Python Tkinter.
-
-● Alternatively wrote a Flask application to build a web application on the underlying model and dockerized the application.
-
-● Packaged the code in a python based executable which could be instantiated with a button click on the desktop as an application.
-
-● Owned the application from design, development to production.
-
-● The project is in beta testing at Volkswagen and Bajaj India.● Responsible for implementing a Facial Expression Recognition (FER) application. ● Performed Exploratory Data Analysis on the underlying data - (FER 2013 dataset) and tested classical Machine Learning models viz. Logistic Regression, Support Vector Machine as a baseline classifier. ● Implemented a Proof of Concept Convolutional Neural Network VGG-19 transfer learning model as the final classifier in Pytorch achieving an accuracy of 73% on the validation set. ● Integrated the application with a MongoDB database to store meeting metadata (timestamps, faces detected, expressions classified etc) and respective images in a GridFS format. ● Wrote a GUI script to translate the POC into a desktop application using Python Tkinter. ● Alternatively wrote a Flask application to build a web application on the underlying model and dockerized the application. ● Packaged the code in a python based executable which could be instantiated with a button click on the desktop as an application. ● Owned the application from design, development to production. ● The project is in beta testing at Volkswagen and Bajaj India.
-Skills: Flask · Graphical User Interface (GUI) · Tkinter · OpenCV · MongoDB · Docker · Python (Programming Language) · Deep Learning · PyTorch · Keras · Scikit-Learn
-            </p>
-          </>
-        ),
-      },
+      }
     ],
   };
   

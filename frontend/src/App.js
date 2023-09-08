@@ -15,13 +15,21 @@ const App = () => {
       <Nav />
       <Background />
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<PageWithScrollingContent component={<About />} />} />
+        <Route path="/skills" element={<PageWithScrollingContent component={<Skills />} />} />
+        <Route path="/projects" element={<PageWithScrollingContent component={<Projects />} />} />
+        <Route path="/contact" element={<PageWithScrollingContent component={<Contact />} />} />
       </Routes>
       <PlayerStats />
     </Router>
+  );
+};
+
+const PageWithScrollingContent = ({ component }) => {
+  return (
+    <div className="page-container">
+      {component}
+    </div>
   );
 };
 

@@ -1,65 +1,101 @@
 const skills = {
     1: [
       {
-        title: "HTML",
+        title: "Python",
+        level: 9,
+      },
+      {
+        title: "Golang",
+        level: 7,
+      },
+      {
+        title: "Java",
         level: 6,
       },
       {
-        title: "CSS",
+        title: "SQL",
+        level: 7,
+      },
+      {
+        title: "Javascript",
         level: 5,
       },
       {
-        title: "SASS",
-        level: 2,
-      },
-      {
-        title: "JavaScript",
+        title: "React",
         level: 5,
       },
       {
-        title: "TypeScript",
+        title: "Docker",
+        level: 7,
+      },
+      {
+        title: "Kubernetes",
         level: 4,
       },
       {
-        title: "Tailwind CSS",
-        level: 1,
+        title: "ML",
+        level: 8,
       },
       {
-        title: "React JS",
-        level: 3,
+        title: "Data Science",
+        level: 8,
       },
       {
-        title: "Figma",
-        level: 4,
+        title: "LLMs",
+        level: 8,
       },
+      {
+        title: "NLP",
+        level: 8,
+      },
+      {
+        title: "CV",
+        level: 6,
+      }
     ],
     2: [
       {
-        title: "PostgreSQL",
+        title: "Git",
+        level: 8,
+      },
+      {
+        title: "GCP",
         level: 5,
       },
       {
-        title: "Node.js",
-        level: 4,
+        title: "HuggingFace",
+        level: 10,
       },
       {
-        title: "MongoDB",
+        title: "AWS",
         level: 2,
       },
       {
-        title: "Git",
+        title: "Gitlab",
+        level:4,
+      },
+      {
+        title: "CircleCI",
         level: 4,
       },
       {
-        title: "PHP",
-        level: 1,
+        title: "Sentry",
+        level: 7,
       },
       {
-        title: "SQL",
-        level: 3,
+        title: "Pytorch",
+        level: 9,
       },
       {
-        title: "Express.js",
+        title: "Jupyter",
+        level: 10,
+      },
+      {
+        title: "FastAPI",
+        level: 8,
+      },
+      {
+        title: "Flask",
         level: 3,
       },
     ],

@@ -7,7 +7,6 @@ import personalIcon from "../assets/moebius-triangle.png";
 import educationIcon from "../assets/upgrade.png";
 import careerIcon from "../assets/triple-corn.png";
 import chatIcon from "../assets/chat-icon.png"; // Import your chat icon or use an appropriate path
-import axios from 'axios';
 
 export default class AboutMenu extends Component {
   constructor(props) {
@@ -33,7 +32,7 @@ export default class AboutMenu extends Component {
 
   render() {
     const { activeMenuItem, activeSubheading } = this.state;
-    const menuItems = ["PERSONAL", "EDUCATION", "CAREER", "CHAT"];
+    const menuItems = ["PERSONAL", "CAREER", "EDUCATION", "CHAT"];
     const activeMenuTitle = menuItems[activeMenuItem - 1];
 
     const activeMenuIcon =

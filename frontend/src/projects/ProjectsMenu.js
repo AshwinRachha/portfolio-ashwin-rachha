@@ -37,7 +37,7 @@ export default class ProjectsMenu extends Component {
 
   render() {
     const { activeProject } = this.state;
-    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"];
+    const projectItems = ["Gurukul", "Hemingway", "Code Mentor", "Distributed System", "VT Search"];
 
     return (
       <div className="project-menu">
