@@ -25,7 +25,7 @@ const Popup = () => {
         }
 
         try {
-            const result = await axios.post('https://ranchomachobackend786.onrender.com/query', { query: message });
+            const result = await axios.post('https://ashwinrachha.onrender.com/query', { query: message });
             setResponse(result.data.response);
             // cache the response
             localStorage.setItem('cachedResponse', result.data.response);
