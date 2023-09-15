@@ -7,7 +7,7 @@ COPY frontend /frontend
 RUN npm run build
 
 # Step 2: Set up the FastAPI application
-FROM python:3.8-slim
+FROM python:3.8-slim as backend
 WORKDIR /backend/app
 COPY backend/app/requirements.txt .
 COPY backend/app/llm_engine.py .
@@ -20,7 +20,7 @@ FROM node:14
 WORKDIR /app
 RUN npm install -g serve
 COPY --from=frontend /frontend/build /app/build
-COPY --from=python:3.8-slim /backend/app /app/backend/app
+COPY --from=backend /backend/app /app/backend/app
 EXPOSE 3000
 EXPOSE 8000
 
